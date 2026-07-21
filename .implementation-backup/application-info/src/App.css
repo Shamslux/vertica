@@ -1,0 +1,74 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+}
+
+.welcome-panel {
+  width: min(100%, 42rem);
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background: var(--surface-color);
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 8%);
+}
+
+.application-header {
+  margin-bottom: 2.5rem;
+}
+
+.environment-badge {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--muted-text-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.application-header h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 650;
+  letter-spacing: -0.06em;
+}
+
+.application-header p {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  color: var(--muted-text-color);
+  line-height: 1.7;
+}
+
+.status-list {
+  display: grid;
+  margin: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.status-item dt {
+  color: var(--muted-text-color);
+}
+
+.status-item dd {
+  margin: 0;
+  font-weight: 600;
+}
